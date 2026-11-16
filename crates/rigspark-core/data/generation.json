@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-10T20:15:45.546Z",
+  "generatedAt": "2026-11-16T11:20:39.365Z",
   "models": [
     {
       "id": "flux1-schnell:fp16",
@@ -1895,6 +1895,88 @@
           "file": "split_files/text_encoders/ovis_2.5.safetensors",
           "sha256": "f453ee5e7a25cb23cf2adf7aae3e5b405f22097cb67f2cfcca029688cb3f740d",
           "bytes": 5140950080
+        }
+      ]
+    },
+    {
+      "id": "pan2:pan2_bf16",
+      "family": "pan2",
+      "kind": "video",
+      "params": "29.2B",
+      "license": "apache-2.0",
+      "openWeight": true,
+      "addedAt": "2026-11-16",
+      "provenance": "auto",
+      "default": false,
+      "source": "https://huggingface.co/Comfy-Org/PAN2",
+      "files": [
+        {
+          "role": "diffusion",
+          "folder": "diffusion_models",
+          "repo": "Comfy-Org/PAN2",
+          "revision": "a97db318eab044a42abba9841b16b308078c6db2",
+          "file": "diffusion_models/pan2_bf16.safetensors",
+          "sha256": "07f59594371c7716db9a7cf348c914f5442e64ac97323a31987e5723289fa951",
+          "bytes": 67369650976
+        },
+        {
+          "role": "text-encoder",
+          "folder": "text_encoders",
+          "repo": "Comfy-Org/PAN2",
+          "revision": "a97db318eab044a42abba9841b16b308078c6db2",
+          "file": "text_encoders/qwen3.5_9b_int8_convrot.safetensors",
+          "sha256": "32e3787472f708fa5f83624acbf5ef23f7fc89c439e05065ea57cfe5a97f025a",
+          "bytes": 9748121532
+        },
+        {
+          "role": "vae",
+          "folder": "vae",
+          "repo": "Comfy-Org/PAN2",
+          "revision": "a97db318eab044a42abba9841b16b308078c6db2",
+          "file": "vae/wan2.2_vae.safetensors",
+          "sha256": "e40321bd36b9709991dae2530eb4ac303dd168276980d3e9bc4b6e2b75fed156",
+          "bytes": 1409400960
+        }
+      ]
+    },
+    {
+      "id": "pan2:pan2_int8_convrot",
+      "family": "pan2",
+      "kind": "video",
+      "params": "24.9B",
+      "license": "apache-2.0",
+      "openWeight": true,
+      "addedAt": "2026-11-16",
+      "provenance": "auto",
+      "default": false,
+      "source": "https://huggingface.co/Comfy-Org/PAN2",
+      "files": [
+        {
+          "role": "diffusion",
+          "folder": "diffusion_models",
+          "repo": "Comfy-Org/PAN2",
+          "revision": "a97db318eab044a42abba9841b16b308078c6db2",
+          "file": "diffusion_models/pan2_int8_convrot.safetensors",
+          "sha256": "a906882e609f91be1cbe8ca26365d6c3d10535c998b0a99b92e462f92be57327",
+          "bytes": 26680974884
+        },
+        {
+          "role": "text-encoder",
+          "folder": "text_encoders",
+          "repo": "Comfy-Org/PAN2",
+          "revision": "a97db318eab044a42abba9841b16b308078c6db2",
+          "file": "text_encoders/qwen3.5_9b_int8_convrot.safetensors",
+          "sha256": "32e3787472f708fa5f83624acbf5ef23f7fc89c439e05065ea57cfe5a97f025a",
+          "bytes": 9748121532
+        },
+        {
+          "role": "vae",
+          "folder": "vae",
+          "repo": "Comfy-Org/PAN2",
+          "revision": "a97db318eab044a42abba9841b16b308078c6db2",
+          "file": "vae/wan2.2_vae.safetensors",
+          "sha256": "e40321bd36b9709991dae2530eb4ac303dd168276980d3e9bc4b6e2b75fed156",
+          "bytes": 1409400960
         }
       ]
     },
