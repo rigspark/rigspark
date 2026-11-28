@@ -60,7 +60,11 @@ fn catalog_refresh_matches_frozen_legacy_text_and_never_writes_input() {
             .filter(|model| {
                 !matches!(
                     model.id.as_str(),
-                    "qwen3.6:35b" | "qwen3.5:4b" | "bonsai:8b" | "bitnet-b1.58:2b"
+                    "qwen3.6:35b"
+                        | "qwen3.5:4b"
+                        | "bonsai:8b"
+                        | "bitnet-b1.58:2b"
+                        | "phi4-mini-reasoning:3.8b"
                 )
             })
             .collect();

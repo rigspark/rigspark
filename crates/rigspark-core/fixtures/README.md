@@ -1,11 +1,18 @@
 # Native Registry Fixtures
 
-`registry-snapshot.json` is the unchanged 66-record offline registry snapshot
+`registry-snapshot.json` began as the 66-record offline registry snapshot
 mechanically exported from the former `src/catalog/registry-snapshot.ts` on
-2026-09-18. It is the shared maintenance input for the native enrichment command
-and retained TypeScript compatibility tooling, not a replacement for
-`data/models.json`. Update it only with sourced registry facts. Its raw model
-shape remains the existing RawRegistryModel contract.
+2026-09-18. It now contains 71 records, including subsequently reviewed additions.
+It is the maintenance input for native catalog bootstrap/refresh, not a replacement
+for `data/models.json`. Update it only with sourced registry facts. Its raw model
+shape remains the existing RawRegistryModel contract. `cargo catalog-enrich` updates
+artifact pins for models already in the catalog; it does not admit new models.
+
+The first issue #254 coverage batch adds `phi4-mini-reasoning:3.8b`; its source
+review and the two excluded candidates are documented in
+[`catalog-coverage-254-batch-1.md`](../../../docs/references/catalog-coverage-254-batch-1.md).
+Historical oracle fixtures below remain unchanged. Tests select their original
+models when comparing frozen TypeScript output, and test new entries separately.
 
 `enrichment-parity.json` freezes 90 full input/output cases from the TypeScript
 `enrichCatalog` oracle as it existed at commit `f4c2c0d`, with clock

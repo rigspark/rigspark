@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased
+
+### Changes
+
+- Add the MIT-licensed `phi4-mini-reasoning:3.8b` reasoning model to the offline
+  catalog with a pinned Ollama artifact and reviewed source evidence (#254).
+
 ## 3.1.4 (2026-11-13)
 
 ### Fixes

@@ -8302,6 +8302,47 @@
         "https://registry.ollama.ai/v2/library/zephyr/manifests/7b",
         "https://ollama.com/library/zephyr:7b"
       ]
+    },
+    {
+      "id": "phi4-mini-reasoning:3.8b",
+      "checkedAt": "2026-11-22T17:00:03.279Z",
+      "sources": [
+        "https://registry.ollama.ai/v2/library/phi4-mini-reasoning/manifests/3.8b",
+        "https://ollama.com/library/phi4-mini-reasoning:3.8b",
+        "https://registry.ollama.ai/v2/library/phi4-mini-reasoning/blobs/sha256:afe3f685de091f49195a874ded3512c1ec4df91b211ccec72b650bd3b247bcc6",
+        "https://registry.ollama.ai/v2/library/phi4-mini-reasoning/blobs/sha256:fa8235e5b48faca34e3ca98cf4f694ef08bd216d28b58071a1f85b1d50cb814d",
+        "https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md",
+        "https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/config.json",
+        "https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/LICENSE",
+        "https://azure.microsoft.com/en-us/blog/one-year-of-phi-small-language-models-making-big-leaps-in-ai/"
+      ],
+      "model": {
+        "id": "phi4-mini-reasoning:3.8b",
+        "family": "phi4-mini-reasoning",
+        "params": "3.8B",
+        "architecture": "dense",
+        "license": "mit",
+        "openWeight": true,
+        "contextLength": 131072.0,
+        "capabilities": [
+          "chat",
+          "reasoning"
+        ],
+        "releaseDate": "2025-04-30",
+        "source": {
+          "ollama": "phi4-mini-reasoning:3.8b",
+          "hf": "microsoft/Phi-4-mini-reasoning"
+        },
+        "quantizations": [
+          {
+            "name": "Q4_K_M",
+            "diskBytes": 3152477440.0,
+            "minRamBytes": 3625349056.0,
+            "minVramBytes": 3625349056.0,
+            "sha256": "f4dd2368e6c32725dc1c5c5548ae9ee2724d6a79052952eb50b65e26288022c4"
+          }
+        ]
+      }
     }
   ],
   "policyVersion": 1,
@@ -8578,6 +8619,15 @@
         "yi:9b",
         "zephyr:141b",
         "zephyr:7b"
+      ]
+    },
+    {
+      "name": "issue-254-reviewed-default-variant",
+      "checkedAt": "2026-11-22T17:00:03.279Z",
+      "source": "https://ollama.com/library/phi4-mini-reasoning:3.8b",
+      "complete": true,
+      "variants": [
+        "phi4-mini-reasoning:3.8b"
       ]
     }
   ]

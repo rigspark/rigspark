@@ -1,6 +1,6 @@
 {
   "schemaVersion": 4,
-  "generatedAt": "2026-11-10T20:12:13.695Z",
+  "generatedAt": "2026-11-22T17:00:03.279Z",
   "models": [
     {
       "id": "bonsai-2:27b",
@@ -5933,6 +5933,33 @@
         }
       ],
       "benchmarkProxy": 0.78
+    },
+    {
+      "id": "phi4-mini-reasoning:3.8b",
+      "family": "phi4-mini-reasoning",
+      "params": "3.8B",
+      "architecture": "dense",
+      "license": "mit",
+      "openWeight": true,
+      "contextLength": 131072.0,
+      "capabilities": [
+        "chat",
+        "reasoning"
+      ],
+      "releaseDate": "2025-04-30",
+      "source": {
+        "ollama": "phi4-mini-reasoning:3.8b",
+        "hf": "microsoft/Phi-4-mini-reasoning"
+      },
+      "quantizations": [
+        {
+          "name": "Q4_K_M",
+          "diskBytes": 3152477440.0,
+          "minRamBytes": 3625349056.0,
+          "minVramBytes": 3625349056.0,
+          "sha256": "f4dd2368e6c32725dc1c5c5548ae9ee2724d6a79052952eb50b65e26288022c4"
+        }
+      ]
     },
     {
       "id": "qwen3:0.6b",

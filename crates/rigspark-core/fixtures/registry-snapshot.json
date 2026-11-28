@@ -1705,5 +1705,30 @@
         "diskBytes": 2000000000
       }
     ]
+  },
+  {
+    "id": "phi4-mini-reasoning:3.8b",
+    "family": "phi4-mini-reasoning",
+    "params": "3.8B",
+    "architecture": "dense",
+    "license": "mit",
+    "openWeight": true,
+    "contextLength": 131072,
+    "capabilities": [
+      "chat",
+      "reasoning"
+    ],
+    "releaseDate": "2025-04-30",
+    "source": {
+      "ollama": "phi4-mini-reasoning:3.8b",
+      "hf": "microsoft/Phi-4-mini-reasoning"
+    },
+    "quantizations": [
+      {
+        "name": "Q4_K_M",
+        "diskBytes": 3152477440,
+        "sha256": "f4dd2368e6c32725dc1c5c5548ae9ee2724d6a79052952eb50b65e26288022c4"
+      }
+    ]
   }
 ]
